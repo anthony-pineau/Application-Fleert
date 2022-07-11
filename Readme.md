@@ -24,3 +24,4 @@ Démarrer l'application Reactnative :
 - cd Front-end/
 - npm i
 - expo start
+- 
