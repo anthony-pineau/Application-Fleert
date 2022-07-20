@@ -16,12 +16,11 @@ Démarrer l'Api Symfony :
 **Frontend**
 
 Les pré-requis techniques :
-- [NPM]([link](https://docs.npmjs.com/))
-- [ReactNative]([link](https://reactnative.dev/))
-- [Expo Go]([link](https://docs.expo.dev/get-started/installation/))
+- [NPM](https://docs.npmjs.com/)
+- [ReactNative](https://reactnative.dev/)
+- [Expo Go](https://docs.expo.dev/get-started/installation/)
 
 Démarrer l'application Reactnative :
 - cd Front-end/
 - npm i
 - expo start
-- 
