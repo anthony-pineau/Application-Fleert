@@ -21,35 +21,25 @@ export default function Message({ navigation, setisLoggedIn }) {
           </Pressable>
         </View>
         <View style={styles.container}>
-          <View style={{maxWidth: "90%"}}>
+          <View style={{width: "90%"}}>
             <Text style={{fontSize:20, fontWeight:"bold", color: "#FF5D5D", marginTop:30, marginBottom: 20}}>Mes nouveaux acteur.rices</Text>
             <View style={{flexDirection: "row", justifyContent: "space-between"}}>
               <Image
                 style={{maxHeight: 60, maxWidth: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3"}}
-                source={require('../../assets/picture.jpg')}
+                source={require('../../assets/eva.jpg')}
               />
-              <Image
-                style={{maxHeight: 60, maxWidth: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3"}}
-                source={require('../../assets/picture.jpg')}
-              />
-              <Image
-                style={{maxHeight: 60, maxWidth: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3"}}
-                source={require('../../assets/picture.jpg')}
-              />
-              <Image
-                style={{maxHeight: 60, maxWidth: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3"}}
-                source={require('../../assets/picture.jpg')}
-              />
-              <Image
-                style={{maxHeight: 60, maxWidth: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3"}}
-                source={require('../../assets/picture.jpg')}
-              />
+              <Text style={{height: 60, width: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3", backgroundColor:"white"}}></Text>
+              <Text style={{height: 60, width: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3", backgroundColor:"white"}}></Text>
+              <Text style={{height: 60, width: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3", backgroundColor:"white"}}></Text>
+              <Text style={{height: 60, width: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3", backgroundColor:"white"}}></Text>
+              <Text style={{height: 60, width: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3", backgroundColor:"white"}}></Text>
+              <Text style={{height: 60, width: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3", backgroundColor:"white"}}></Text>
             </View>
             <Text style={{fontSize:20, fontWeight:"bold", color: "#FF5D5D", marginTop:20, marginBottom: 20}}>Messages</Text>
             <View style={{flexDirection:"row", backgroundColor: "white", borderRadius:20, padding: 15}}>
               <Image
                 style={{maxHeight: 60, maxWidth: 60, borderRadius: 100, borderRadius: 150, borderWidth: 1, borderColor: "#A3A3A3", marginRight: 15}}
-                source={require('../../assets/picture.jpg')}
+                source={require('../../assets/eva.jpg')}
               />
               <View>
                 <Text style={{color: "#FF5D5D"}}>Éva</Text>

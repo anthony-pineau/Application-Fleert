@@ -12,7 +12,7 @@ import Theme from './theme/index';
 import Home from './screens/home';
 import Settings from './screens/settings';
 import Setting from './screens/settings/setting';
-import Match from './screens/match';
+import MovieNotSeen from './screens/movieNotSeen';
 import Message from './screens/messages';
 {/* Import Register */}
 
@@ -38,16 +38,15 @@ function TabNav({setisLoggedIn}) {
     <Tab.Navigator
 
           screenOptions={({ route }) => ({
+            tabBarStyle: { height: 80},
             tabBarIcon: ({ focused, color, size }) => {
               let iconName;
 
-              if (route.name === 'Home') {
+              if (route.name === 'MovieNotSeen') {
                 iconName = focused
                   ? 'film-outline'
                   : 'film-outline';
-              } else if (route.name === 'Setting') {
-                iconName = focused ? 'ios-list' : 'ios-list';
-              } else if (route.name === 'Matchs') {
+              } else if (route.name === 'Home') {
                 iconName = focused ? 'heart-outline' : 'heart-outline';
               } else if (route.name === 'Messages') {
                 iconName = focused ? 'chatbubbles-outline' : 'chatbubbles-outline';
@@ -57,17 +56,18 @@ function TabNav({setisLoggedIn}) {
               // You can return any component that you like here!
               return <View style={{borderColor:color, borderWidth:5, borderRadius: 100, paddingBottom: 5, paddingTop: 5, paddingLeft:6, paddingRight:6}}><Ionicons name={iconName} size={size} color={color}/></View>;
             },
-            tabBarActiveTintColor: '#FF5D5D',
-            tabBarInactiveTintColor: '#B3B3B3',
+            tabBarActiveTintColor: '#B3B3B3',
+            tabBarInactiveTintColor: '#FF5D5D',
           })}
         >
           <Tab.Screen options={{ headerShown: false, tabBarShowLabel: false}} name="Home" component={Home} />
 
-
-          <Tab.Screen name="Matchs" options={{ headerShown: false, tabBarShowLabel: false}}>
-            {props => <Match {...props} setisLoggedIn={setisLoggedIn}/>}
+          <Tab.Screen name="MovieNotSeen" options={{ headerShown: false, tabBarShowLabel: false}}>
+            {props => <MovieNotSeen{...props} setisLoggedIn={setisLoggedIn}/>}
           </Tab.Screen>
 
+          
+          
           <Tab.Screen name="Messages" options={{ headerShown: false, tabBarShowLabel: false}}>
             {props => <Message {...props} setisLoggedIn={setisLoggedIn}/>}
           </Tab.Screen>

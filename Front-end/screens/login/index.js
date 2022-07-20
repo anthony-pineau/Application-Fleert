@@ -82,6 +82,7 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     fontWeight: "bold",
     color: "white",
+    textAlign: "center",
  
   },
   text: {

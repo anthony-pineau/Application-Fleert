@@ -25,7 +25,7 @@ export default function Settings({ navigation, setisLoggedIn }) {
           style={styles.img}
           source={require('../../assets/picture.jpg')}
         />
-        <Text style={{fontSize: 25, fontWeight: 'bold', marginTop: 20}}>Prenom, 25</Text>
+        <Text style={{fontSize: 25, fontWeight: 'bold', marginTop: 20}}>Éléa, 20</Text>
 
         <View style={styles.containerButton}>
           <View style={{flexDirection: "column", alignItems:"center", justifyContent:"center"}}>
